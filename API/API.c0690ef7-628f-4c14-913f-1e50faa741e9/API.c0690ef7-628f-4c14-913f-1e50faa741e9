@@ -1,0 +1,693 @@
+{
+  "apiDefinition" : {
+    "info" : {
+      "description" : "Products API used to fetch, post, update products",
+      "version" : "1.0",
+      "title" : "Products"
+    },
+    "serviceRegistryDisplayName" : "ProductsDemo_1.0",
+    "tags" : [ {
+      "name" : "Inventory"
+    }, {
+      "name" : "SplunkDemo"
+    } ],
+    "schemes" : [ ],
+    "consumes" : [ "application/json", "application/xml", "text/xml", "text/html", "application/x-www-form-urlencoded", "application/vnd.api+json" ],
+    "produces" : [ "application/json", "application/xml", "text/xml", "text/html", "application/x-www-form-urlencoded", "application/vnd.api+json" ],
+    "security" : [ ],
+    "paths" : {
+      "/products/{id}" : {
+        "get" : {
+          "operationId" : "productsid_GET_2",
+          "parameters" : [ {
+            "in" : "query",
+            "name" : "name",
+            "description" : "product description",
+            "required" : false,
+            "schema" : {
+              "type" : "string"
+            },
+            "type" : "string",
+            "parameterSchema" : {
+              "type" : "string"
+            }
+          }, {
+            "in" : "path",
+            "name" : "id",
+            "required" : true,
+            "schema" : {
+              "type" : "string"
+            },
+            "type" : "string",
+            "parameterSchema" : {
+              "type" : "string"
+            }
+          } ],
+          "responses" : {
+            "200" : {
+              "description" : "OK",
+              "content" : {
+                "application/json" : {
+                  "schema" : {
+                    "$ref" : "#/components/schemas/productsid_GET_response"
+                  },
+                  "examples" : { }
+                },
+                "application/vnd.api+json" : {
+                  "schema" : {
+                    "$ref" : "#/components/schemas/productsid_GET_response"
+                  },
+                  "examples" : { }
+                },
+                "application/x-www-form-urlencoded" : {
+                  "schema" : {
+                    "$ref" : "#/components/schemas/productsid_GET_response"
+                  },
+                  "examples" : { }
+                },
+                "application/xml" : {
+                  "schema" : {
+                    "$ref" : "#/components/schemas/productsid_GET_response"
+                  },
+                  "examples" : { }
+                },
+                "text/html" : {
+                  "schema" : {
+                    "$ref" : "#/components/schemas/productsid_GET_response"
+                  },
+                  "examples" : { }
+                },
+                "text/xml" : {
+                  "schema" : {
+                    "$ref" : "#/components/schemas/productsid_GET_response"
+                  },
+                  "examples" : { }
+                }
+              },
+              "links" : { },
+              "schema" : { },
+              "examples" : { },
+              "headers" : { }
+            },
+            "401" : {
+              "description" : "Access Denied",
+              "content" : { },
+              "links" : { },
+              "schema" : { },
+              "examples" : { },
+              "headers" : { }
+            }
+          },
+          "mockedResponses" : {
+            "200" : {
+              "responseBody" : {
+                "application/json" : "{\"output\":{\"id\":\"jNiOODvJaGBmC\"},\"errors\":[{\"code\":\"IXTqr\",\"meta\":\"NDxQpDsl\",\"links\":{\"about\":\"WFca\"},\"detail\":\"JRA\",\"id\":\"EbowVpeUGrA\",\"source\":{\"pointer\":\"PTLQRvkcsEfh\",\"parameter\":\"vufJL\"},\"title\":\"XymRYaqvOan\",\"status\":\"HUgYYnxOYfJ\"}]}",
+                "application/vnd.api+json" : "",
+                "application/x-www-form-urlencoded" : "",
+                "application/xml" : "<output><id>qsml</id></output><errors><code>sqCTj</code><meta>aOBNjw</meta><links><about>uDTPm</about></links><detail>xDlXs</detail><id/><source><pointer>PknVNGdaVVMrtx</pointer><parameter>VkPSwl</parameter></source><title>sqOJpOYNO</title><status>BVYnOahABcUMf</status></errors><errors><code>XvlduPolw</code><meta>GcPLcCH</meta><links><about>VnAI</about></links><detail>Tej</detail><id>XCRC</id><source><pointer>rBJ</pointer><parameter>qrtaWLnHMNWWr</parameter></source><title>Em</title><status>lB</status></errors>",
+                "text/html" : "",
+                "text/xml" : ""
+              }
+            },
+            "401" : {
+              "responseBody" : {
+                "application/json" : "",
+                "application/vnd.api+json" : "",
+                "application/x-www-form-urlencoded" : "",
+                "application/xml" : "",
+                "text/html" : "",
+                "text/xml" : ""
+              }
+            }
+          },
+          "mockedConditionsBasedCustomResponsesList" : [ ],
+          "enabled" : true,
+          "scopes" : [ "GET method Policy For Products" ],
+          "requestBody" : {
+            "content" : { },
+            "name" : "productsid_GET_2"
+          }
+        },
+        "delete" : {
+          "operationId" : "productsid_DELETE_2",
+          "parameters" : [ {
+            "in" : "path",
+            "name" : "id",
+            "required" : true,
+            "schema" : {
+              "type" : "string"
+            },
+            "type" : "string",
+            "parameterSchema" : {
+              "type" : "string"
+            }
+          } ],
+          "responses" : {
+            "200" : {
+              "description" : "OK",
+              "content" : {
+                "application/json" : {
+                  "schema" : {
+                    "$ref" : "#/components/schemas/productsid_DELETE_response"
+                  },
+                  "examples" : { }
+                },
+                "application/vnd.api+json" : {
+                  "schema" : {
+                    "$ref" : "#/components/schemas/productsid_DELETE_response"
+                  },
+                  "examples" : { }
+                },
+                "application/x-www-form-urlencoded" : {
+                  "schema" : {
+                    "$ref" : "#/components/schemas/productsid_DELETE_response"
+                  },
+                  "examples" : { }
+                },
+                "application/xml" : {
+                  "schema" : {
+                    "$ref" : "#/components/schemas/productsid_DELETE_response"
+                  },
+                  "examples" : { }
+                },
+                "text/html" : {
+                  "schema" : {
+                    "$ref" : "#/components/schemas/productsid_DELETE_response"
+                  },
+                  "examples" : { }
+                },
+                "text/xml" : {
+                  "schema" : {
+                    "$ref" : "#/components/schemas/productsid_DELETE_response"
+                  },
+                  "examples" : { }
+                }
+              },
+              "links" : { },
+              "schema" : { },
+              "examples" : { },
+              "headers" : { }
+            },
+            "401" : {
+              "description" : "Access Denied",
+              "content" : { },
+              "links" : { },
+              "schema" : { },
+              "examples" : { },
+              "headers" : { }
+            }
+          },
+          "mockedResponses" : {
+            "200" : {
+              "responseBody" : {
+                "application/json" : "{\"output\":{\"id\":\"PSXJQEW\"},\"errors\":[{\"code\":\"qfbjSnyIo\",\"meta\":\"kOxNgNAUk\",\"links\":{\"about\":\"\"},\"detail\":\"SamWtboCHRmh\",\"id\":\"UyOFSIFADdS\",\"source\":{\"pointer\":\"mcc\",\"parameter\":\"fJ\"},\"title\":\"bLDpS\",\"status\":\"Fqe\"},{\"code\":\"Fk\",\"meta\":\"hRLdKHFMDUoV\",\"links\":{\"about\":\"pLTPYbKkwNmfR\"},\"detail\":\"WRwrvJF\",\"id\":\"avKegViLrwcvKN\",\"source\":{\"pointer\":\"wpSOuATqUul\",\"parameter\":\"bNHlyDgdC\"},\"title\":\"GTHlMTuVurN\",\"status\":\"rfoqpVXIXplD\"}]}",
+                "application/vnd.api+json" : "",
+                "application/x-www-form-urlencoded" : "",
+                "application/xml" : "<output><id>MMBVpQBMT</id></output><errors><code>QuEadnKNrl</code><meta>TXonyihFFITtgt</meta><links><about/></links><detail>v</detail><id>LWGMl</id><source><pointer>VDLDecVbVdQAa</pointer><parameter>cQTcR</parameter></source><title>uXNvUAeaHiQT</title><status>gXjqVmagxrg</status></errors>",
+                "text/html" : "",
+                "text/xml" : ""
+              }
+            },
+            "401" : {
+              "responseBody" : {
+                "application/json" : "",
+                "application/vnd.api+json" : "",
+                "application/x-www-form-urlencoded" : "",
+                "application/xml" : "",
+                "text/html" : "",
+                "text/xml" : ""
+              }
+            }
+          },
+          "mockedConditionsBasedCustomResponsesList" : [ ],
+          "enabled" : true,
+          "scopes" : [ ],
+          "requestBody" : {
+            "content" : { },
+            "name" : "productsid_DELETE_2"
+          }
+        },
+        "patch" : {
+          "operationId" : "productsid_PATCH_2",
+          "parameters" : [ {
+            "in" : "path",
+            "name" : "id",
+            "required" : true,
+            "schema" : {
+              "type" : "string"
+            },
+            "type" : "string",
+            "parameterSchema" : {
+              "type" : "string"
+            }
+          } ],
+          "responses" : {
+            "200" : {
+              "description" : "OK",
+              "content" : {
+                "application/json" : {
+                  "schema" : {
+                    "$ref" : "#/components/schemas/productsid_PATCH_response"
+                  },
+                  "examples" : { }
+                },
+                "application/vnd.api+json" : {
+                  "schema" : {
+                    "$ref" : "#/components/schemas/productsid_PATCH_response"
+                  },
+                  "examples" : { }
+                },
+                "application/x-www-form-urlencoded" : {
+                  "schema" : {
+                    "$ref" : "#/components/schemas/productsid_PATCH_response"
+                  },
+                  "examples" : { }
+                },
+                "application/xml" : {
+                  "schema" : {
+                    "$ref" : "#/components/schemas/productsid_PATCH_response"
+                  },
+                  "examples" : { }
+                },
+                "text/html" : {
+                  "schema" : {
+                    "$ref" : "#/components/schemas/productsid_PATCH_response"
+                  },
+                  "examples" : { }
+                },
+                "text/xml" : {
+                  "schema" : {
+                    "$ref" : "#/components/schemas/productsid_PATCH_response"
+                  },
+                  "examples" : { }
+                }
+              },
+              "links" : { },
+              "schema" : { },
+              "examples" : { },
+              "headers" : { }
+            },
+            "401" : {
+              "description" : "Access Denied",
+              "content" : { },
+              "links" : { },
+              "schema" : { },
+              "examples" : { },
+              "headers" : { }
+            }
+          },
+          "mockedResponses" : {
+            "200" : {
+              "responseBody" : {
+                "application/json" : "{\"output\":{\"id\":\"WoIFHmqTR\"},\"errors\":[{\"code\":\"\",\"meta\":\"wtturtOKXdDyYJ\",\"links\":{\"about\":\"aIBrNWPEVWhg\"},\"detail\":\"EPU\",\"id\":\"\",\"source\":{\"pointer\":\"ka\",\"parameter\":\"uGxvp\"},\"title\":\"cm\",\"status\":\"\"}]}",
+                "application/vnd.api+json" : "",
+                "application/x-www-form-urlencoded" : "",
+                "application/xml" : "<output><id>BxIJuKMxLEbdKv</id></output><errors><code>RmKUXtV</code><meta>UJTSlPTO</meta><links><about>huMeWk</about></links><detail>cOfoxD</detail><id>YRayTtj</id><source><pointer>MXJKKiTWIBB</pointer><parameter>SDLbUytySXBpR</parameter></source><title>QMPmfaq</title><status>MseAWw</status></errors>",
+                "text/html" : "",
+                "text/xml" : ""
+              }
+            },
+            "401" : {
+              "responseBody" : {
+                "application/json" : "",
+                "application/vnd.api+json" : "",
+                "application/x-www-form-urlencoded" : "",
+                "application/xml" : "",
+                "text/html" : "",
+                "text/xml" : ""
+              }
+            }
+          },
+          "mockedConditionsBasedCustomResponsesList" : [ ],
+          "enabled" : true,
+          "scopes" : [ ],
+          "requestBody" : {
+            "content" : {
+              "application/json" : {
+                "schema" : {
+                  "$ref" : "#/components/schemas/products"
+                },
+                "examples" : { }
+              },
+              "application/vnd.api+json" : {
+                "schema" : {
+                  "$ref" : "#/components/schemas/products"
+                },
+                "examples" : { }
+              },
+              "application/x-www-form-urlencoded" : {
+                "schema" : {
+                  "$ref" : "#/components/schemas/products"
+                },
+                "examples" : { }
+              },
+              "application/xml" : {
+                "schema" : {
+                  "$ref" : "#/components/schemas/products"
+                },
+                "examples" : { }
+              },
+              "text/html" : {
+                "schema" : {
+                  "$ref" : "#/components/schemas/products"
+                },
+                "examples" : { }
+              },
+              "text/xml" : {
+                "schema" : {
+                  "$ref" : "#/components/schemas/products"
+                },
+                "examples" : { }
+              }
+            },
+            "name" : "productsid_PATCH_2"
+          }
+        },
+        "scopes" : [ ],
+        "displayName" : "/products/{id}",
+        "enabled" : true
+      },
+      "/products" : {
+        "get" : {
+          "operationId" : "products_GET_1",
+          "responses" : {
+            "200" : {
+              "description" : "OK",
+              "content" : {
+                "application/json" : {
+                  "schema" : {
+                    "$ref" : "#/components/schemas/products_GET_response"
+                  },
+                  "examples" : { }
+                },
+                "application/vnd.api+json" : {
+                  "schema" : {
+                    "$ref" : "#/components/schemas/products_GET_response"
+                  },
+                  "examples" : { }
+                },
+                "application/x-www-form-urlencoded" : {
+                  "schema" : {
+                    "$ref" : "#/components/schemas/products_GET_response"
+                  },
+                  "examples" : { }
+                },
+                "application/xml" : {
+                  "schema" : {
+                    "$ref" : "#/components/schemas/products_GET_response"
+                  },
+                  "examples" : { }
+                },
+                "text/html" : {
+                  "schema" : {
+                    "$ref" : "#/components/schemas/products_GET_response"
+                  },
+                  "examples" : { }
+                },
+                "text/xml" : {
+                  "schema" : {
+                    "$ref" : "#/components/schemas/products_GET_response"
+                  },
+                  "examples" : { }
+                }
+              },
+              "links" : { },
+              "schema" : { },
+              "examples" : { },
+              "headers" : { }
+            },
+            "401" : {
+              "description" : "Access Denied",
+              "content" : { },
+              "links" : { },
+              "schema" : { },
+              "examples" : { },
+              "headers" : { }
+            }
+          },
+          "mockedResponses" : {
+            "200" : {
+              "responseBody" : {
+                "application/json" : "{\"output\":[{\"id\":\"\"},{\"id\":\"wd\"}],\"errors\":[{\"code\":\"eaprablljo\",\"meta\":\"fBCDsmpp\",\"links\":{\"about\":\"cbv\"},\"detail\":\"JI\",\"id\":\"Bg\",\"source\":{\"pointer\":\"qH\",\"parameter\":\"QiUasXFK\"},\"title\":\"cUYEWHLqNeQg\",\"status\":\"FPGIJGKxHNV\"},{\"code\":\"xcj\",\"meta\":\"wSDUmFVRca\",\"links\":{\"about\":\"IjM\"},\"detail\":\"NsKsNt\",\"id\":\"nniXBOcr\",\"source\":{\"pointer\":\"sA\",\"parameter\":\"qXYIDmPPyOeeF\"},\"title\":\"teNokOQoEU\",\"status\":\"PlEDLKYR\"}]}",
+                "application/vnd.api+json" : "",
+                "application/x-www-form-urlencoded" : "",
+                "application/xml" : "<output><id>Xsq</id></output><errors><code>sCXIHaf</code><meta>HIWIhqhw</meta><links><about>NUEgwGqf</about></links><detail>unHNQUPh</detail><id>CSFkj</id><source><pointer>xIhcBI</pointer><parameter>qRKpCGGxw</parameter></source><title>KGFgVMASVaoMbE</title><status>uXSQJC</status></errors>",
+                "text/html" : "",
+                "text/xml" : ""
+              }
+            },
+            "401" : {
+              "responseBody" : {
+                "application/json" : "",
+                "application/vnd.api+json" : "",
+                "application/x-www-form-urlencoded" : "",
+                "application/xml" : "",
+                "text/html" : "",
+                "text/xml" : ""
+              }
+            }
+          },
+          "mockedConditionsBasedCustomResponsesList" : [ ],
+          "enabled" : true,
+          "scopes" : [ ],
+          "requestBody" : {
+            "content" : { },
+            "name" : "products_GET_1"
+          }
+        },
+        "post" : {
+          "operationId" : "products_POST_1",
+          "responses" : {
+            "200" : {
+              "description" : "OK",
+              "content" : {
+                "application/json" : {
+                  "schema" : {
+                    "$ref" : "#/components/schemas/products_POST_response"
+                  },
+                  "examples" : { }
+                },
+                "application/vnd.api+json" : {
+                  "schema" : {
+                    "$ref" : "#/components/schemas/products_POST_response"
+                  },
+                  "examples" : { }
+                },
+                "application/x-www-form-urlencoded" : {
+                  "schema" : {
+                    "$ref" : "#/components/schemas/products_POST_response"
+                  },
+                  "examples" : { }
+                },
+                "application/xml" : {
+                  "schema" : {
+                    "$ref" : "#/components/schemas/products_POST_response"
+                  },
+                  "examples" : { }
+                },
+                "text/html" : {
+                  "schema" : {
+                    "$ref" : "#/components/schemas/products_POST_response"
+                  },
+                  "examples" : { }
+                },
+                "text/xml" : {
+                  "schema" : {
+                    "$ref" : "#/components/schemas/products_POST_response"
+                  },
+                  "examples" : { }
+                }
+              },
+              "links" : { },
+              "schema" : { },
+              "examples" : { },
+              "headers" : { }
+            },
+            "401" : {
+              "description" : "Access Denied",
+              "content" : { },
+              "links" : { },
+              "schema" : { },
+              "examples" : { },
+              "headers" : { }
+            }
+          },
+          "mockedResponses" : {
+            "200" : {
+              "responseBody" : {
+                "application/json" : "{\"output\":{\"id\":\"ss\"},\"errors\":[{\"code\":\"pUIfAEjUh\",\"meta\":\"WBKeRkk\",\"links\":{\"about\":\"DfD\"},\"detail\":\"iS\",\"id\":\"BMfxOlklx\",\"source\":{\"pointer\":\"fTVeW\",\"parameter\":\"UcRjLUcrBwXFlI\"},\"title\":\"nIkbIdaGNaQQI\",\"status\":\"uRyFmDorKEDRhs\"}]}",
+                "application/vnd.api+json" : "",
+                "application/x-www-form-urlencoded" : "",
+                "application/xml" : "<output><id>bSeGaT</id></output><errors><code>gkBEA</code><meta>IlMEYqquFRNf</meta><links><about>HRVh</about></links><detail/><id>MennnBiI</id><source><pointer>lrEEdtw</pointer><parameter>vbfFnD</parameter></source><title>ekdUek</title><status>iMkxrkQecd</status></errors><errors><code>mJcJLX</code><meta>X</meta><links><about>U</about></links><detail>ueGK</detail><id>DuhPypknGdDwwn</id><source><pointer>CESmvCjhOXqRM</pointer><parameter>QprtnTXxcqOiP</parameter></source><title>h</title><status>eKPlSbUILclt</status></errors>",
+                "text/html" : "",
+                "text/xml" : ""
+              }
+            },
+            "401" : {
+              "responseBody" : {
+                "application/json" : "",
+                "application/vnd.api+json" : "",
+                "application/x-www-form-urlencoded" : "",
+                "application/xml" : "",
+                "text/html" : "",
+                "text/xml" : ""
+              }
+            }
+          },
+          "mockedConditionsBasedCustomResponsesList" : [ ],
+          "enabled" : true,
+          "scopes" : [ "sys_/products_post" ],
+          "requestBody" : {
+            "content" : {
+              "application/json" : {
+                "schema" : {
+                  "$ref" : "#/components/schemas/products"
+                },
+                "examples" : { }
+              },
+              "application/vnd.api+json" : {
+                "schema" : {
+                  "$ref" : "#/components/schemas/products"
+                },
+                "examples" : { }
+              },
+              "application/x-www-form-urlencoded" : {
+                "schema" : {
+                  "$ref" : "#/components/schemas/products"
+                },
+                "examples" : { }
+              },
+              "application/xml" : {
+                "schema" : {
+                  "$ref" : "#/components/schemas/products"
+                },
+                "examples" : { }
+              },
+              "text/html" : {
+                "schema" : {
+                  "$ref" : "#/components/schemas/products"
+                },
+                "examples" : { }
+              },
+              "text/xml" : {
+                "schema" : {
+                  "$ref" : "#/components/schemas/products"
+                },
+                "examples" : { }
+              }
+            },
+            "name" : "products_POST_1"
+          }
+        },
+        "scopes" : [ ],
+        "displayName" : "/products",
+        "enabled" : true
+      }
+    },
+    "securityDefinitions" : { },
+    "definitions" : { },
+    "parameters" : { },
+    "baseUriParameters" : [ ],
+    "externalDocs" : [ ],
+    "servers" : [ {
+      "url" : "http://localhost:5555/rad/Products.apiDesc:products_rad",
+      "variables" : { }
+    }, {
+      "url" : "https://localhost:5555/rad/Products.apiDesc:products_rad",
+      "variables" : { }
+    } ],
+    "components" : {
+      "schemas" : {
+        "productsid_PATCH_response" : {
+          "type" : "gateway",
+          "schema" : "{\"required\":[\"output\",\"errors\"],\"type\":\"object\",\"properties\":{\"errors\":{\"type\":\"array\",\"items\":{\"$ref\":\"#/components/schemas/errorTemplate\"}},\"output\":{\"$ref\":\"#/components/schemas/products\"}}}"
+        },
+        "products_GET_response" : {
+          "type" : "gateway",
+          "schema" : "{\"required\":[\"output\",\"errors\"],\"type\":\"object\",\"properties\":{\"errors\":{\"type\":\"array\",\"items\":{\"$ref\":\"#/components/schemas/errorTemplate\"}},\"output\":{\"type\":\"array\",\"items\":{\"$ref\":\"#/components/schemas/products\"}}}}"
+        },
+        "productsid_DELETE_response" : {
+          "type" : "gateway",
+          "schema" : "{\"required\":[\"output\",\"errors\"],\"type\":\"object\",\"properties\":{\"errors\":{\"type\":\"array\",\"items\":{\"$ref\":\"#/components/schemas/errorTemplate\"}},\"output\":{\"$ref\":\"#/components/schemas/products\"}}}"
+        },
+        "errorTemplate" : {
+          "type" : "gateway",
+          "schema" : "{\"type\":\"object\",\"properties\":{\"code\":{\"type\":\"string\"},\"detail\":{\"type\":\"string\"},\"id\":{\"type\":\"string\"},\"links\":{\"$ref\":\"#/components/schemas/links\"},\"meta\":{\"type\":\"string\",\"format\":\"binary\"},\"source\":{\"$ref\":\"#/components/schemas/source\"},\"status\":{\"type\":\"string\"},\"title\":{\"type\":\"string\"}}}"
+        },
+        "products_POST_response" : {
+          "type" : "gateway",
+          "schema" : "{\"required\":[\"output\",\"errors\"],\"type\":\"object\",\"properties\":{\"errors\":{\"type\":\"array\",\"items\":{\"$ref\":\"#/components/schemas/errorTemplate\"}},\"output\":{\"$ref\":\"#/components/schemas/products\"}}}"
+        },
+        "links" : {
+          "type" : "gateway",
+          "schema" : "{\"type\":\"object\",\"properties\":{\"about\":{\"type\":\"string\"}}}"
+        },
+        "productsid_GET_response" : {
+          "type" : "gateway",
+          "schema" : "{\"required\":[\"output\",\"errors\"],\"type\":\"object\",\"properties\":{\"errors\":{\"type\":\"array\",\"items\":{\"$ref\":\"#/components/schemas/errorTemplate\"}},\"output\":{\"$ref\":\"#/components/schemas/products\"}}}"
+        },
+        "source" : {
+          "type" : "gateway",
+          "schema" : "{\"type\":\"object\",\"properties\":{\"parameter\":{\"type\":\"string\"},\"pointer\":{\"type\":\"string\"}}}"
+        },
+        "products" : {
+          "type" : "gateway",
+          "schema" : "{\"required\":[\"id\"],\"type\":\"object\",\"properties\":{\"id\":{\"type\":\"string\"}}}"
+        }
+      },
+      "responses" : { },
+      "parameters" : { },
+      "examples" : { },
+      "requestBodies" : { },
+      "headers" : { },
+      "links" : { },
+      "callbacks" : { }
+    },
+    "apiTags" : [ "Inventory", "SplunkDemo" ],
+    "type" : "rest"
+  },
+  "nativeEndpoint" : [ {
+    "passSecurityHeaders" : true,
+    "uri" : "http://localhost:5555/rad/Products.apiDesc:products_rad",
+    "connectionTimeoutDuration" : 0,
+    "alias" : false
+  }, {
+    "passSecurityHeaders" : true,
+    "uri" : "https://localhost:5555/rad/Products.apiDesc:products_rad",
+    "connectionTimeoutDuration" : 0,
+    "alias" : false
+  } ],
+  "apiName" : "ProductsDemo",
+  "apiVersion" : "1.0",
+  "apiDescription" : "Products API used to fetch, post, update products",
+  "maturityState" : "Production",
+  "apiGroups" : [ " Product Catalog", "Sales and Ordering" ],
+  "isActive" : true,
+  "type" : "REST",
+  "owner" : "Andy",
+  "policies" : [ "c4210388-ac88-40bd-87d7-7ba7cc503766" ],
+  "referencedFiles" : {
+    "products_API_swagger.json" : "---\r\nswagger: \"2.0\"\r\ninfo:\r\n  description: \"Products API used to fetch, post, update products\"\r\n  version: \"1.0\"\r\n  title: \"Products\"\r\nhost: \"daeitrain40451.eur.ad.sag:7777\"\r\nbasePath: \"/rad/Products.apiDesc:products_rad\"\r\nschemes:\r\n- \"http\"\r\n- \"https\"\r\nconsumes:\r\n- \"application/json\"\r\n- \"application/xml\"\r\n- \"text/xml\"\r\n- \"text/html\"\r\n- \"application/x-www-form-urlencoded\"\r\n- \"application/vnd.api+json\"\r\nproduces:\r\n- \"application/json\"\r\n- \"application/xml\"\r\n- \"text/xml\"\r\n- \"text/html\"\r\n- \"application/x-www-form-urlencoded\"\r\n- \"application/vnd.api+json\"\r\npaths:\r\n  /products:\r\n    get:\r\n      operationId: \"products_GET_1\"\r\n      parameters: []\r\n      responses:\r\n        200:\r\n          description: \"OK\"\r\n          schema:\r\n            $ref: \"#/definitions/products_GET_response\"\r\n        401:\r\n          description: \"Access Denied\"\r\n    post:\r\n      operationId: \"products_POST_1\"\r\n      parameters:\r\n      - in: \"body\"\r\n        name: \"input\"\r\n        required: true\r\n        schema:\r\n          $ref: \"#/definitions/products\"\r\n      responses:\r\n        200:\r\n          description: \"OK\"\r\n          schema:\r\n            $ref: \"#/definitions/products_POST_response\"\r\n        401:\r\n          description: \"Access Denied\"\r\n  /products/{id}:\r\n    get:\r\n      operationId: \"productsid_GET_2\"\r\n      parameters:\r\n      - name: \"id\"\r\n        in: \"path\"\r\n        required: true\r\n        type: \"string\"\r\n      responses:\r\n        200:\r\n          description: \"OK\"\r\n          schema:\r\n            $ref: \"#/definitions/productsid_GET_response\"\r\n        401:\r\n          description: \"Access Denied\"\r\n    delete:\r\n      operationId: \"productsid_DELETE_2\"\r\n      parameters:\r\n      - name: \"id\"\r\n        in: \"path\"\r\n        required: true\r\n        type: \"string\"\r\n      responses:\r\n        200:\r\n          description: \"OK\"\r\n          schema:\r\n            $ref: \"#/definitions/productsid_DELETE_response\"\r\n        401:\r\n          description: \"Access Denied\"\r\n    patch:\r\n      operationId: \"productsid_PATCH_2\"\r\n      parameters:\r\n      - name: \"id\"\r\n        in: \"path\"\r\n        required: true\r\n        type: \"string\"\r\n      - in: \"body\"\r\n        name: \"input\"\r\n        required: true\r\n        schema:\r\n          $ref: \"#/definitions/products\"\r\n      responses:\r\n        200:\r\n          description: \"OK\"\r\n          schema:\r\n            $ref: \"#/definitions/productsid_PATCH_response\"\r\n        401:\r\n          description: \"Access Denied\"\r\ndefinitions:\r\n  productsid_GET_response:\r\n    required:\r\n    - \"errors\"\r\n    - \"output\"\r\n    properties:\r\n      output:\r\n        $ref: \"#/definitions/products\"\r\n      errors:\r\n        type: \"array\"\r\n        items:\r\n          $ref: \"#/definitions/errorTemplate\"\r\n  products_GET_response:\r\n    required:\r\n    - \"errors\"\r\n    - \"output\"\r\n    properties:\r\n      output:\r\n        type: \"array\"\r\n        items:\r\n          $ref: \"#/definitions/products\"\r\n      errors:\r\n        type: \"array\"\r\n        items:\r\n          $ref: \"#/definitions/errorTemplate\"\r\n  products_POST_response:\r\n    required:\r\n    - \"errors\"\r\n    - \"output\"\r\n    properties:\r\n      output:\r\n        $ref: \"#/definitions/products\"\r\n      errors:\r\n        type: \"array\"\r\n        items:\r\n          $ref: \"#/definitions/errorTemplate\"\r\n  productsid_PATCH_response:\r\n    required:\r\n    - \"errors\"\r\n    - \"output\"\r\n    properties:\r\n      output:\r\n        $ref: \"#/definitions/products\"\r\n      errors:\r\n        type: \"array\"\r\n        items:\r\n          $ref: \"#/definitions/errorTemplate\"\r\n  links:\r\n    properties:\r\n      about:\r\n        type: \"string\"\r\n  products:\r\n    required:\r\n    - \"id\"\r\n    properties:\r\n      id:\r\n        type: \"string\"\r\n  productsid_DELETE_response:\r\n    required:\r\n    - \"errors\"\r\n    - \"output\"\r\n    properties:\r\n      output:\r\n        $ref: \"#/definitions/products\"\r\n      errors:\r\n        type: \"array\"\r\n        items:\r\n          $ref: \"#/definitions/errorTemplate\"\r\n  source:\r\n    properties:\r\n      pointer:\r\n        type: \"string\"\r\n      parameter:\r\n        type: \"string\"\r\n  errorTemplate:\r\n    properties:\r\n      code:\r\n        type: \"string\"\r\n      meta:\r\n        type: \"string\"\r\n        format: \"binary\"\r\n      links:\r\n        $ref: \"#/definitions/links\"\r\n      id:\r\n        type: \"string\"\r\n      detail:\r\n        type: \"string\"\r\n      source:\r\n        $ref: \"#/definitions/source\"\r\n      title:\r\n        type: \"string\"\r\n      status:\r\n        type: \"string\"\r\n"
+  },
+  "scopes" : [ {
+    "name" : "sys_/products_post",
+    "description" : "",
+    "oAuth2ScopeName" : "ad25cad0-0002-4b37-9ecc-85a5288e79a6",
+    "policies" : [ "426a859d-0184-48e7-9658-ed46385f9332" ],
+    "mashedUpAPI" : true
+  }, {
+    "name" : "GET method Policy For Products",
+    "description" : "",
+    "oAuth2ScopeName" : "75dfe759-eed2-41a6-8c2c-61aa9944c525",
+    "policies" : [ "7a05172a-bff9-43e5-b678-6be78213456b" ],
+    "mashedUpAPI" : false
+  } ],
+  "publishedPortals" : [ ],
+  "creationDate" : "2019-08-11 19:13:32 GMT",
+  "lastModified" : "2020-07-22 08:57:43 GMT",
+  "systemVersion" : 1,
+  "mockService" : {
+    "enableMock" : false
+  },
+  "id" : "c0690ef7-628f-4c14-913f-1e50faa741e9"
+}

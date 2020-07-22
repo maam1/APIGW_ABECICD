@@ -1,0 +1,28 @@
+{
+  "id" : "426a859d-0184-48e7-9658-ed46385f9332",
+  "names" : [ {
+    "value" : "sys_/products_post_scopePolicy",
+    "locale" : "English"
+  } ],
+  "descriptions" : [ {
+    "value" : "",
+    "locale" : "English"
+  } ],
+  "scope" : {
+    "scopeConditions" : [ ]
+  },
+  "policyEnforcements" : [ {
+    "enforcements" : [ {
+      "enforcementObjectId" : "4e929f5c-2553-4995-ace5-a1a694e4d770",
+      "order" : "0"
+    }, {
+      "enforcementObjectId" : "95953f0d-806e-4857-876c-ea94aebe1c1f",
+      "order" : "1"
+    } ],
+    "stageKey" : "routing"
+  } ],
+  "policyScope" : "SCOPE",
+  "active" : false,
+  "global" : false,
+  "systemPolicy" : false
+}

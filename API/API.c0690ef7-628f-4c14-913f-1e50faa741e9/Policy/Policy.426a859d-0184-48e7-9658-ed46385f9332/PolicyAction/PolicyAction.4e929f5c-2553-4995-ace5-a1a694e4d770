@@ -1,0 +1,34 @@
+{
+  "id" : "4e929f5c-2553-4995-ace5-a1a694e4d770",
+  "names" : [ {
+    "value" : "Mashup Routing",
+    "locale" : "en"
+  } ],
+  "templateKey" : "mashupRouting",
+  "parameters" : [ {
+    "templateKey" : "mashupStepName",
+    "values" : [ "lookupCode" ]
+  }, {
+    "templateKey" : "mashupEndpointDetails",
+    "parameters" : [ {
+      "templateKey" : "gatewayAPIKey",
+      "values" : [ "fef7abce-ba10-4e49-b1aa-6ee3937eb2a8" ]
+    }, {
+      "templateKey" : "gatewayAPIResource",
+      "values" : [ "/code" ]
+    }, {
+      "templateKey" : "gatewayAPIMethod",
+      "values" : [ "get" ]
+    }, {
+      "templateKey" : "shouldExecuteOutboundAuthPolicy",
+      "values" : [ "false" ]
+    } ]
+  }, {
+    "templateKey" : "mashupHeaderTransformation",
+    "parameters" : [ {
+      "templateKey" : "useIncomingHeaders",
+      "values" : [ "false" ]
+    } ]
+  } ],
+  "active" : false
+}

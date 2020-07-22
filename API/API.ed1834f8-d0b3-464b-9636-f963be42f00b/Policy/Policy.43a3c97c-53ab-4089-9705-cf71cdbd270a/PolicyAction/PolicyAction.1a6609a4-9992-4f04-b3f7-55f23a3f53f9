@@ -1,0 +1,25 @@
+{
+  "id" : "1a6609a4-9992-4f04-b3f7-55f23a3f53f9",
+  "names" : [ {
+    "value" : "Invoke webMethods IS",
+    "locale" : "en"
+  } ],
+  "templateKey" : "responseInvokeESB",
+  "parameters" : [ {
+    "templateKey" : "esbAlias",
+    "values" : [ ]
+  }, {
+    "templateKey" : "invokeISService",
+    "parameters" : [ {
+      "templateKey" : "serviceName",
+      "values" : [ "payload:modifyResPayload" ]
+    }, {
+      "templateKey" : "runAsUser",
+      "values" : [ "Administrator" ]
+    }, {
+      "templateKey" : "complyToISSpec",
+      "values" : [ "true" ]
+    } ]
+  } ],
+  "active" : false
+}

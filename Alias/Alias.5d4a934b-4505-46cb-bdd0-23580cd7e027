@@ -1,0 +1,9 @@
+{
+  "id" : "5d4a934b-4505-46cb-bdd0-23580cd7e027",
+  "name" : "sample",
+  "type" : "webmethodsAlias",
+  "stage" : "",
+  "owner" : "Administrator",
+  "serviceName" : "response:responseProcessing",
+  "complyToISSpec" : true
+}

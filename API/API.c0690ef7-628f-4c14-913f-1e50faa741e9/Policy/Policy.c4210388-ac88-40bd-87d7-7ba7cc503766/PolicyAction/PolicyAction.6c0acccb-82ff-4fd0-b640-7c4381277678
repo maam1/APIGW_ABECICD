@@ -1,0 +1,22 @@
+{
+  "id" : "6c0acccb-82ff-4fd0-b640-7c4381277678",
+  "names" : [ {
+    "value" : "Invoke webMethods IS",
+    "locale" : "en"
+  } ],
+  "templateKey" : "responseInvokeESB",
+  "parameters" : [ {
+    "templateKey" : "invokeISService",
+    "parameters" : [ {
+      "templateKey" : "serviceName",
+      "values" : [ "payload:modifyResPayload" ]
+    }, {
+      "templateKey" : "runAsUser",
+      "values" : [ "Administrator" ]
+    }, {
+      "templateKey" : "complyToISSpec",
+      "values" : [ "true" ]
+    } ]
+  } ],
+  "active" : false
+}
