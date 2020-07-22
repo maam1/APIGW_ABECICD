@@ -5,5 +5,5 @@
   "description" : "Users added to this group can perform similar API Gateway Providers tasks.",
   "type" : "local",
   "systemDefined" : true,
-  "userIds" : [ "GatewayInternalTechnicalUser" ]
+  "userIds" : [ ]
 }

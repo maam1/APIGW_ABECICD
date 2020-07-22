@@ -1,0 +1,26 @@
+{
+  "id" : "b5a4116b-c22f-483e-88a5-ecae7d8a3d23",
+  "names" : [ {
+    "value" : "Default Policy for API petAPI",
+    "locale" : "English"
+  } ],
+  "descriptions" : [ {
+    "value" : "",
+    "locale" : "English"
+  } ],
+  "policyEnforcements" : [ {
+    "enforcements" : [ {
+      "enforcementObjectId" : "8a6c873f-9198-4fa5-9a44-9e44534f142f"
+    } ],
+    "stageKey" : "transport"
+  }, {
+    "enforcements" : [ {
+      "enforcementObjectId" : "f5a2da4b-f60a-4f65-a3bb-c7d80fa8470a"
+    } ],
+    "stageKey" : "routing"
+  } ],
+  "policyScope" : "SERVICE",
+  "active" : false,
+  "global" : false,
+  "systemPolicy" : false
+}
