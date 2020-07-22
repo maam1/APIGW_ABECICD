@@ -1,0 +1,22 @@
+{
+  "id" : "d1de46f9-df5b-4122-8aeb-f6a570886268",
+  "names" : [ {
+    "value" : "Invoke webMethods IS",
+    "locale" : "en"
+  } ],
+  "templateKey" : "requestInvokeESB",
+  "parameters" : [ {
+    "templateKey" : "invokeISService",
+    "parameters" : [ {
+      "templateKey" : "serviceName",
+      "values" : [ "query:modifyQueryParameter" ]
+    }, {
+      "templateKey" : "complyToISSpec",
+      "values" : [ "true" ]
+    }, {
+      "templateKey" : "runAsUser",
+      "values" : [ "Administrator" ]
+    } ]
+  } ],
+  "active" : false
+}

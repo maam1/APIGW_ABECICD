@@ -1,0 +1,9 @@
+{
+  "id" : "c21344cb-adeb-4bf9-b89d-a453ceca7a42",
+  "name" : "AWS_Shashank",
+  "type" : "awsConfigurationAlias",
+  "owner" : "Administrator",
+  "region" : "us-east-1",
+  "accessKeyId" : "********************************",
+  "secretAccessKey" : "********************************"
+}
