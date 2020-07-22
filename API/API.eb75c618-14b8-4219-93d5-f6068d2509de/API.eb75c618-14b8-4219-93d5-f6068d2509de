@@ -1079,12 +1079,12 @@
   },
   "nativeEndpoint" : [ {
     "passSecurityHeaders" : true,
-    "uri" : "https://petstore.swagger.io/v2",
+    "uri" : "http://petstore.swagger.io/v2",
     "connectionTimeoutDuration" : 0,
     "alias" : false
   }, {
     "passSecurityHeaders" : true,
-    "uri" : "http://petstore.swagger.io/v2",
+    "uri" : "https://petstore.swagger.io/v2",
     "connectionTimeoutDuration" : 0,
     "alias" : false
   } ],
@@ -1092,7 +1092,7 @@
   "apiVersion" : "1.0.5",
   "apiDescription" : "This is a sample server Petstore server.  You can find out more about Swagger at [http://swagger.io](http://swagger.io) or on [irc.freenode.net, #swagger](http://swagger.io/irc/).  For this sample, you can use the api key `special-key` to test the authorization filters.",
   "maturityState" : "Beta",
-  "isActive" : false,
+  "isActive" : true,
   "type" : "REST",
   "owner" : "Administrator",
   "policies" : [ "b5a4116b-c22f-483e-88a5-ecae7d8a3d23" ],
